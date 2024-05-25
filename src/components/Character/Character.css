@@ -1,0 +1,80 @@
+.character-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.character-card:hover {
+  transform: scale(1.02);
+}
+
+.character-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.character-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.character-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.character-card li {
+  margin: 4px 0;
+}
+
+.character-status.alive {
+  color: green;
+}
+
+.character-status.dead {
+  color: red;
+}
+
+.character-status.unknown {
+  color: gray;
+}
+
+/* Estilos para el modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .character-card {
+    border: 1px solid #444;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .character-card h1 {
+    color: #ddd;
+  }
+
+  .character-card ul {
+    color: #ccc;
+  }
+
+  .character-card li {
+    color: #ccc;
+  }
+
+  .character-status.alive {
+    color: #90ee90;
+  }
+
+  .character-status.dead {
+    color: #ff6961;
+  }
+
+  .character-status.unknown {
+    color: #aaa;
+  }
+}

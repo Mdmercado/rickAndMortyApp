@@ -1,0 +1,37 @@
+.location {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  background-color: #fff;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+  word-wrap: break-word; /* Para evitar el desbordamiento de textos largos */
+}
+
+.location:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location div {
+  margin-bottom: 8px;
+}
+
+.location .additional-info {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Estilos para el modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .location {
+    border: 1px solid #444;
+    background-color: #333;
+    color: #ddd;
+  }
+
+  .location .additional-info {
+    color: #aaa;
+  }
+}
